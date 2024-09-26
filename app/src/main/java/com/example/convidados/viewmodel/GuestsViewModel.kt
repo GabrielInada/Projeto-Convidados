@@ -25,19 +25,8 @@ class GuestsViewModel(application: Application) : AndroidViewModel(application) 
             mGuestList.value = mGuestRepository.getAbsent()
         }
     }
-//    fun getAll() {
-//        listAllGuests.value = repository.getAll()
-//    }
 
     fun delete(id: Int) {
         mGuestRepository.delete(mGuestRepository.get(id))
     }
-
-//    fun getAbsent() {
-//        listAllGuests.value = repository.getAbsent()
-//    }
-//
-//    fun getPresent() {
-//        listAllGuests.value = repository.getPresent()
-//    }
 }
