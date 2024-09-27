@@ -16,6 +16,7 @@ abstract class GuestDataBase : RoomDatabase() {
     companion object {
         private lateinit var INSTANCE: GuestDataBase
 
+        // Singleton
         fun getDatabase(context: Context): GuestDataBase {
             if (!::INSTANCE.isInitialized) {
                 synchronized(GuestDataBase::class) {
